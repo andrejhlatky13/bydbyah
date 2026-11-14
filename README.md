@@ -3,9 +3,9 @@
 Trip logbook, charging, battery and tyre dashboard for **BYD DiLink 5.0** head units (tested on BYD Sealion 7, Android 11).
 Kniha jázd, nabíjanie, batéria a pneumatiky priamo na displeji auta BYD (DiLink 5.0).
 
-**[⬇ Stiahnuť / Download v0.9.23](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-0.9.23-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
+**[⬇ Stiahnuť / Download v0.9.24](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
 
-SHA-256 (v0.9.23): `bccd3afcdef9f7e5b1f66e41747fb4a0063b246382fbb117aba9ea1fda44f1d8`
+SHA-256 (v0.9.24): `fd23269ca6664a0d7c3346f8943d2a47dcf6922e1fc8cc9ec6fa99c0156b766b`
 
 ---
 
@@ -31,11 +31,11 @@ SHA-256 (v0.9.23): `bccd3afcdef9f7e5b1f66e41747fb4a0063b246382fbb117aba9ea1fda44
    ```sh
    pkg install -y android-tools curl
    CAR=192.0.2.10   # IP adresa tvojho auta
-   curl -fLO https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-0.9.23-public.apk && adb connect $CAR:5555 && adb -s $CAR:5555 install -r byd-by-ah-0.9.23-public.apk
+   curl -fLO https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk && adb connect $CAR:5555 && adb -s $CAR:5555 install -r byd-by-ah-public.apk
    ```
 3. Nastavenie oprávnení a automatického štartu (jeden príkaz, rovnaké okno Termuxu):
    ```sh
-   S=$CAR:5555; P=sk.hlatky.bydbyah; adb connect $S; A="adb -s $S shell"; for p in $($A dumpsys package $P | grep -o 'android\.permission\.[A-Z0-9_]*' | sort -u); do $A pm grant $P $p 2>/dev/null; done; APPUID=$($A dumpsys package $P | grep -m1 -o 'userId=[0-9]*' | cut -d= -f2); $A dumpsys deviceidle whitelist +$P; $A cmd netpolicy add restrict-background-whitelist $APPUID; $A settings put global hidden_api_policy 1; $A settings put global hidden_api_blacklist_exemptions 'Lcom/ts/,Ldalvik/system/'; $A cmd appops set $P RUN_ANY_IN_BACKGROUND allow; $A cmd appops set $P RUN_IN_BACKGROUND allow; $A appops set $P SYSTEM_ALERT_WINDOW allow; X=$P/sk.hlatky.evlog.service.AutoStartA11y; E=$($A settings get secure enabled_accessibility_services | tr -d '\r'); echo "prístupnosť pred: $E"; case ":$E:" in *":$X:"*|*":$P/.service.AutoStartA11y:"*) ;; "::"|":null:") $A settings put secure enabled_accessibility_services $X;; *) $A settings put secure enabled_accessibility_services "'$E:$X'";; esac; $A settings put secure accessibility_enabled 1; echo "prístupnosť teraz: $($A settings get secure enabled_accessibility_services)"; $A cmd notification allow_listener $P/sk.hlatky.evlog.service.AutoStartNls; $A am force-stop $P; $A am start -n $P/.ui.MainActivity; sleep 3; K=$($A pm path $P | head -1 | cut -d: -f2 | tr -d '\r'); $A "CLASSPATH=$K app_process /system/bin sk.hlatky.evlog.sup.Supervisor --daemon"; sleep 3; $A "pidof bydbyah_sup; tail -n 3 /data/local/tmp/bydbyah-sup.log"
+   S=$CAR:5555; P=sk.hlatky.bydbyah; adb connect $S; A="adb -s $S shell"; for p in $($A dumpsys package $P | grep -o 'android\.permission\.[A-Z0-9_]*' | sort -u); do $A pm grant $P $p 2>/dev/null; done; APPUID=$($A dumpsys package $P | grep -m1 -o 'userId=[0-9]*' | cut -d= -f2); $A dumpsys deviceidle whitelist +$P; $A cmd netpolicy add restrict-background-whitelist $APPUID; $A settings put global hidden_api_policy 1; $A settings put global hidden_api_blacklist_exemptions 'Lcom/ts/,Ldalvik/system/'; $A cmd appops set $P RUN_ANY_IN_BACKGROUND allow; $A cmd appops set $P RUN_IN_BACKGROUND allow; $A appops set $P SYSTEM_ALERT_WINDOW allow; X=$P/sk.hlatky.evlog.service.AutoStartA11y; E=$($A settings get secure enabled_accessibility_services | tr -d '\r'); echo "prístupnosť pred: $E"; case ":$E:" in *":$X:"*|*":$P/sk.hlatky.evlog.service.AutoStartA11y:"*) ;; "::"|":null:") $A settings put secure enabled_accessibility_services $X;; *) $A settings put secure enabled_accessibility_services "'$E:$X'";; esac; $A settings put secure accessibility_enabled 1; echo "prístupnosť teraz: $($A settings get secure enabled_accessibility_services)"; $A cmd notification allow_listener $P/sk.hlatky.evlog.service.AutoStartNls; $A am force-stop $P; $A am start -n $P/sk.hlatky.evlog.ui.MainActivity; sleep 3; K=$($A pm path $P | head -1 | cut -d: -f2 | tr -d '\r'); $A "CLASSPATH=$K app_process /system/bin sk.hlatky.evlog.sup.Supervisor --daemon"; sleep 3; $A "pidof bydbyah_sup; tail -n 3 /data/local/tmp/bydbyah-sup.log"
    ```
 4. Otvor aplikáciu, vyber krajinu a jazyk, zadaj e-mail.
 

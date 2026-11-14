@@ -27,7 +27,9 @@ SHA-256 (v0.9.27): `38d7016334db0e2121521e9d7c75c0f087a78cff15a161fc63fca97fbe01
 | Jazyky: SK, EN, CS, HU, PL, DE, 中文 | ✅ | ✅ |
 
 ### Inštalácia (Termux)
-1. V aute zapni ladenie cez sieť (ADB, port 5555) a zisti IP adresu auta. Telefón musí byť v rovnakej sieti (napr. hotspot).
+1. V aute zapni ladenie cez sieť (ADB, port 5555) v skrytom menu (ťukanie 9–10× na nadpis/verziu) a zisti IP adresu auta. Telefón musí byť v rovnakej sieti (napr. hotspot).
+
+   **⚠ Dôležité:** Pri zapínaní ADB ladenia (ťukanie 9–10× na nadpis/verziu) musí byť obrazovka auta otočená **na výšku** (vertikálne), inak sa menu nezobrazí.
 2. V Termuxe na telefóne:
    ```sh
    pkg install -y android-tools curl
@@ -49,6 +51,14 @@ SHA-256 (v0.9.27): `38d7016334db0e2121521e9d7c75c0f087a78cff15a161fc63fca97fbe01
 - Updates: the app checks GitHub Releases and offers an **Update** button.
 
 Install: same steps as above (Termux → `adb install` → setup one-liner with `CAR=<car IP>`).
+
+**⚠ Important:** When enabling ADB debugging (tap the heading/version 9–10 times), the car's screen must be rotated to **portrait** (vertical), otherwise the menu will not appear.
+
+- **CZ:** Při zapínání ADB ladění (ťukání 9–10× na nadpis/verzi) musí být obrazovka auta otočená na výšku (vertikálně), jinak se menu nezobrazí.
+- **PL:** Ważne: Kiedy będziesz włączać debugowanie ADB i stukać 9–10 razy w wersję oprogramowania, ekran auta musi być obrócony do pozycji pionowej. Inaczej tej opcji nie zobaczysz.
+- **DE:** Beim Aktivieren der ADB-Fehlerbehebung (9–10× auf die Überschrift/Version tippen) muss der Bildschirm des Autos ins Hochformat (vertikal) gedreht sein, sonst erscheint das Menü nicht.
+- **HU:** Az ADB hibakeresés bekapcsolásakor (9–10 koppintás a címre/verzióra) az autó képernyőjét álló (függőleges) helyzetbe kell forgatni, különben a menü nem jelenik meg.
+- **中文:** 开启 ADB 调试（在标题/版本上点击 9–10 次）时，必须将车机屏幕旋转为竖屏（纵向），否则菜单不会显示。
 
 ---
 Unofficial app, not affiliated with BYD. Use at your own risk; don't operate the screen while driving.

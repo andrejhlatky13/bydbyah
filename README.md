@@ -3,16 +3,16 @@
 Trip logbook, charging, battery and tyre dashboard for **BYD DiLink 5.0** head units (tested on BYD Sealion 7, Android 11).
 Kniha jázd, nabíjanie, batéria a pneumatiky priamo na displeji auta BYD (DiLink 5.0).
 
-**[⬇ Stiahnuť / Download v0.9.26](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
+**[⬇ Stiahnuť / Download v0.9.27](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
 
-SHA-256 (v0.9.26): `f2c9afa68097c4103a5f0bfa71cc0d39bb813a6a5ab3e162db295fbdc2cf3dd9`
+SHA-256 (v0.9.27): `38d7016334db0e2121521e9d7c75c0f087a78cff15a161fc63fca97fbe01bd82`
 
 ---
 
 ## 🇸🇰 Slovensky
 
 - **Slovensko: 30 dní zadarmo**, ostatné krajiny **14 dní zadarmo** po zadaní e-mailu. Potom sa aplikácia uzamkne.
-- **10 € a aplikácia je odomknutá navždy:** podpor vývoj cez [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) a zadaj tam **ten istý e-mail** ako v aplikácii. Odomknutie pridáme zvyčajne do 24 hodín. V aplikácii potom stlač *Skontrolovať odomknutie*.
+- **Ľubovoľný príspevok a aplikácia je odomknutá navždy:** podpor vývoj cez [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) akoukoľvek sumou a zadaj tam **ten istý e-mail** ako v aplikácii. Odomknutie pridáme zvyčajne do 24 hodín. V aplikácii potom stlač *Skontrolovať odomknutie*.
 - E-mail sa nikam neposiela. Aplikácia porovnáva iba jeho odtlačok (solený SHA-256) so zoznamom [`licenses.json`](licenses.json).
 - Aktualizácie: aplikácia sama zistí novú verziu a ponúkne tlačidlo **Aktualizovať**.
 
@@ -43,7 +43,7 @@ SHA-256 (v0.9.26): `f2c9afa68097c4103a5f0bfa71cc0d39bb813a6a5ab3e162db295fbdc2cf
 ## 🌍 English
 
 - **30-day free trial in Slovakia**, **14 days** in other countries, after entering your e-mail; then the app locks.
-- **€10 unlocks it forever:** support via [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) using **the same e-mail** as in the app. Unlocks are usually added within 24 h; then tap *Check unlock*.
+- **Any amount unlocks it forever:** support via [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) using **the same e-mail** as in the app. Unlocks are usually added within 24 h; then tap *Check unlock*.
 - Your e-mail never leaves the car – the app only compares a salted SHA-256 fingerprint with [`licenses.json`](licenses.json).
 - The VAT logbook (Slovak § 85n) is only shown when you choose *Slovensko*. Language is independent of country.
 - Updates: the app checks GitHub Releases and offers an **Update** button.
@@ -58,7 +58,7 @@ Unofficial app, not affiliated with BYD. Use at your own risk; don't operate the
 From v0.9.26 the in-app updater can limit an update dialog to selected countries. This is optional and backward compatible.
 
 - In the GitHub release body, add a line such as `regions: SK` (comma-separated ISO codes, e.g. `regions: SK, CZ`).
-- Or attach an `update.json` asset: `{"version":"0.9.27","regions":["SK"]}`. If both are present, `update.json` wins.
+- Or attach an `update.json` asset: `{"version":"0.9.28","regions":["SK"]}`. If both are present, `update.json` wins.
 
 If `regions` is present and the user's selected country is not listed, the app stays silent (no update dialog). A later release without `regions`, or one that includes their country, is shown as usual. No `regions` = show to everyone, including older 0.9.25 clients, which ignore this field.
 

@@ -3,15 +3,15 @@
 Trip logbook, charging, battery and tyre dashboard for **BYD DiLink 5.0** head units (tested on BYD Sealion 7, Android 11).
 Kniha jázd, nabíjanie, batéria a pneumatiky priamo na displeji auta BYD (DiLink 5.0).
 
-**[⬇ Stiahnuť / Download v0.9.24](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
+**[⬇ Stiahnuť / Download v0.9.25](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
 
-SHA-256 (v0.9.24): `fd23269ca6664a0d7c3346f8943d2a47dcf6922e1fc8cc9ec6fa99c0156b766b`
+SHA-256 (v0.9.25): `0587b01d5281dc32470702d08e587dd768d38e5139e9595ceb861ab9e8aeb8b9`
 
 ---
 
 ## 🇸🇰 Slovensky
 
-- **7 dní zadarmo** po zadaní e-mailu. Potom sa aplikácia uzamkne.
+- **14 dní zadarmo** po zadaní e-mailu. Potom sa aplikácia uzamkne.
 - **10 € a aplikácia je odomknutá navždy:** podpor vývoj cez [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) a zadaj tam **ten istý e-mail** ako v aplikácii. Odomknutie pridáme zvyčajne do 24 hodín. V aplikácii potom stlač *Skontrolovať odomknutie*.
 - E-mail sa nikam neposiela. Aplikácia porovnáva iba jeho odtlačok (solený SHA-256) so zoznamom [`licenses.json`](licenses.json).
 - Aktualizácie: aplikácia sama zistí novú verziu a ponúkne tlačidlo **Aktualizovať**.
@@ -41,7 +41,7 @@ SHA-256 (v0.9.24): `fd23269ca6664a0d7c3346f8943d2a47dcf6922e1fc8cc9ec6fa99c0156b
 
 ## 🌍 English
 
-- **7-day free trial** after entering your e-mail; then the app locks.
+- **14-day free trial** after entering your e-mail; then the app locks.
 - **€10 unlocks it forever:** support via [Buy Me a Coffee](https://www.buymeacoffee.com/andrejhlatt) using **the same e-mail** as in the app. Unlocks are usually added within 24 h; then tap *Check unlock*.
 - Your e-mail never leaves the car – the app only compares a salted SHA-256 fingerprint with [`licenses.json`](licenses.json).
 - The VAT logbook (Slovak § 85n) is only shown when you choose *Slovensko*. Language is independent of country.

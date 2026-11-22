@@ -3,9 +3,9 @@
 Trip logbook, charging, battery and tyre dashboard for **BYD DiLink 5.0** head units (tested on BYD Sealion 7, Android 11).
 Kniha jázd, nabíjanie, batéria a pneumatiky priamo na displeji auta BYD (DiLink 5.0).
 
-**[⬇ Stiahnuť / Download v0.9.27](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
+**[⬇ Stiahnuť / Download v0.9.31](https://github.com/andrejhlatky13/bydbyah/releases/latest/download/byd-by-ah-public.apk)** · [all releases](https://github.com/andrejhlatky13/bydbyah/releases)
 
-SHA-256 (v0.9.27): `38d7016334db0e2121521e9d7c75c0f087a78cff15a161fc63fca97fbe01bd82`
+SHA-256 (v0.9.31): `68ce8234056086d64b20ebcd39ac5e38203d1f6ae07eafd3a25fbb0be901542e`
 
 ---
 

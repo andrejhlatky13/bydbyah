@@ -9,6 +9,20 @@ SHA-256 (v0.9.27): `38d7016334db0e2121521e9d7c75c0f087a78cff15a161fc63fca97fbe01
 
 ---
 
+## 📱 BYD by AH do mobilu (telefón / phone app) · Telegram
+
+**[⬇ Stiahnuť appku do telefónu 1.0.5 / Download phone app](https://github.com/andrejhlatky13/bydbyah/releases/download/phone-v1.0.5/byd-by-ah-mobil-1.0.5.apk)** · [vydanie / release notes](https://github.com/andrejhlatky13/bydbyah/releases/tag/phone-v1.0.5)
+
+🇸🇰 Prehľad z auta v telefóne a **správy do Telegramu cez tvojho vlastného bota** (po jazde, po nabíjaní, denný/mesačný súhrn). Token a chat ID ostávajú len v tvojom telefóne.
+1. Nainštaluj APK do telefónu (Android 8+).
+2. V aute: BYD by AH → Nastavenia → **Webový prístup** (PIN a QR). Telefón a auto v rovnakej sieti (hotspot telefónu).
+3. V telefóne: ⚙ → **Skenovať QR kód z auta** (alebo PIN).
+4. ⚙ → **✈ Správy do Telegramu**: @BotFather → `/newbot` → skopíruj token → v svojom botovi ťukni Štart → *Zistiť chat ID* → *Poslať testovaciu správu* → *Povoliť odosielanie na pozadí*.
+
+🌍 Phone companion with **Telegram messages via your own bot**. Install the APK → in the car open *Nastavenia → Webový prístup* (PIN + QR) → on the phone ⚙ → *Scan QR code from the car* → ⚙ → *✈ Telegram messages* and follow the in-app steps (@BotFather, `/newbot`, token, Start, *Find chat ID*, *Send test message*). Telegram needs car app **0.9.31+**.
+
+SHA-256 (1.0.5): `cdb13cba673c34d192dd15f630968b247e32878dd1ab5096bb8144bef4533def`
+
 ## 🇸🇰 Slovensky
 
 - **Slovensko: 30 dní zadarmo**, ostatné krajiny **14 dní zadarmo** po zadaní e-mailu. Potom sa aplikácia uzamkne.
